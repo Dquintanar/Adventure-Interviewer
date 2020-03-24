@@ -28,15 +28,37 @@ def intro():
     print('You are consolidating new and updated information for your research')
     print('You are going to be dealing with x company')
     print('You can have an interview with x company')
-    print('Or investigate x company'  '\n')
+    print('Or investigate x company \n')
+
+
+def valid_input(prompt, option1, option2):
+    while True:
+        response = input(prompt).lower()
+        if option1 in response:
+            break
+        elif option2 in response:
+            break
+        else:
+            print("Sorry, I don't understand.")
+    return response
 
 
 def strategy():
-    questions = input('Enter 1 to interview.\n'
-                      'Enter 2 to investigate.\n'
-                      'What would you like to do?\n'
-                      '(Please enter 1 or 2.)\n')
+    questions = valid_input('Enter 1 to interview.\n'
+                            'Enter 2 to investigate.\n'
+                            'What would you like to do?\n'
+                            '(Please enter 1 or 2.)\n',
+                            '1', '2')
+    if '1' in questions:
+        interview()
+
+    if '2' in questions:
+        investigation()
+
 
 intro()
 
 strategy()
+
+valid_input()
+
