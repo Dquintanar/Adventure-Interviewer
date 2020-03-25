@@ -60,5 +60,4 @@ intro()
 
 strategy()
 
-valid_input()
 
