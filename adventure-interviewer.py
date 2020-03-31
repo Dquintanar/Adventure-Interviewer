@@ -80,6 +80,7 @@ def investigation():
           ' you got inspired\n'
           '  and start thinking to learn how to play an instrument.\n'
           '  You completed your mission.\n')
+    investigating_again()
 
 
 def valid_input(prompt, option1, option2):
@@ -102,7 +103,6 @@ def strategy():
                             '1', '2')
     if '1' in questions:
         interview()
-
     if '2' in questions:
         investigation()
 
@@ -122,20 +122,37 @@ def keep_questioning():
         strategy()
 
 
+def investigating_again():
+    questions = valid_input('Enter 1 to interview x company.\n'
+                            'Enter 2 to investigate x company.\n'
+                            'What would you like to do?\n'
+                            '(Please enter 1 or 2.)\n', '1', '2')
+    if '1' in questions:
+        print('You are now back to x company'
+              ' and you are ready for justice.')
+        print('You are not welcome into x company')
+        print('but you walk in with a Class Action Law Suit'
+              ' and they want to settle')
+        print('You Won Congratulations!')
+    if '2' in questions:
+        print('You make the mistake of going back to x company')
+        print('and they have surveillance video footage on you '
+              'from your first investigation, '
+              'they put you in jail for trespassing\n'
+              'and robbery!\n')
+        yes_no()
+
+
+def yes_no():
+    questions = valid_input('Would you like to play again ?(y/n)\n', 'y', 'n')
+    if 'n' in questions:
+        print('Thank you for Playing\n')
+    if 'y' in questions:
+        print('Ok Restarting the game')
+        intro()
+        strategy()
+
+
 intro()
 
 strategy()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
