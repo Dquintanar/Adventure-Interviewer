@@ -4,7 +4,14 @@ bad_companies = ['"Tyson Foods"',
                  '"JBS USA Holdings Inc"',
                  '"Omaha Steaks"',
                  '"Taco Loco"', ]
+
+pictures = ['the Queen mutating to a mosquito',
+            'Oprah on a Koala body',
+            'Trump\'s hair in a pig',
+            'chickens with a human faces',
+            'pigs with wings', ]
 companies = random.choice(bad_companies)
+pics = random.choice(pictures)
 
 
 def intro():
@@ -78,14 +85,14 @@ def investigation():
     print('  To your surprise you find a mad cow'
           ' wandering by the manager\'s desk\n'
           '  eating paper from the trash.')
-    print('  On the wall were pictures of x pics')
+    print('  On the wall were pictures of ' + pics)
     print('  playing  x mutations.\n'
           '  Wow I always wanted to play the x mutations !')
     print('  while you are in shock, you open\n'
           '  the manager\'s computer and copy all'
           ' the files you needed.')
     print('  You exit without incident but after\n'
-          '  seeing the x pics playing the\n x mutations'
+          '  seeing ' + pics + ' playing the\n x mutations'
           ' you got inspired\n'
           '  and start thinking to learn how to play an instrument.\n'
           '  You completed your mission.\n')
