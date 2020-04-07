@@ -30,4 +30,13 @@ def intro():
     print('You can have an interview with x company')
     print('Or investigate x company'  '\n')
 
+
+def strategy():
+    questions = input('Enter 1 to interview.\n'
+                      'Enter 2 to investigate.\n'
+                      'What would you like to do?\n'
+                      '(Please enter 1 or 2.)\n')
+
 intro()
+
+strategy()
