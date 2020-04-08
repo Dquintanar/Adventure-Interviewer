@@ -90,8 +90,3 @@ intro()
 strategy()
 
 
-
-
-
-
-
