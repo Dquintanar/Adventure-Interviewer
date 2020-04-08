@@ -31,6 +31,35 @@ def intro():
     print('Or investigate x company \n')
 
 
+def interview():
+    print('Manager:     How are you, Im the manager '
+          'welcome to x company , what can I do for you ?')
+    print('interviewer: Thank you, \n'
+          '             I work for Green Peace and')
+    print('             I have some questions about x company'
+          ' food and water supply ?\n')
+    print('             In average how many gallons of water does'
+          ' the stock consumes per year ?')
+    print('             Is all your stock been feed '
+          'with Monsanto products ?')
+    print('             In order to deliver your products '
+          'how many miles does your\n'
+          '             trucks travel in one year ?\n')
+    print('Manager:     There is nothing to say, we are in complaint')
+    print('             with all the meat regulations, inspections and')
+    print('             standards, all the answers to your'
+          ' questions are published')
+    print('             on our website. Please don\'t waist my time')
+    print('interviewer: My question is not about regulations')
+    print('             but research shows that surrounding communities')
+    print('             are having shortage of water')
+    print('             and their agriculture has been affected hello?')
+    print('')
+    print('Manager:     Abruptly goes back to his office '
+          'and does\'t want a talk to you.')
+    print('interviewer: You keep asking but no answers.\n')
+
+
 def valid_input(prompt, option1, option2):
     while True:
         response = input(prompt).lower()
