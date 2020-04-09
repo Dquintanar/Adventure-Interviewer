@@ -58,6 +58,7 @@ def interview():
     print('Manager:     Abruptly goes back to his office '
           'and does\'t want a talk to you.')
     print('interviewer: You keep asking but no answers.\n')
+    keep_questioning()
 
 
 def investigation():
@@ -104,6 +105,21 @@ def strategy():
 
     if '2' in questions:
         investigation()
+
+
+def keep_questioning():
+    questions = valid_input('Would you like to (1)'
+                            'keep questioning (2) or not now ?\n', '1', '2')
+    if '1' in questions:
+        print('You know that the questions were bold and'
+              ' as a result no answers were gathered.')
+        print('Security from  x company'
+              ' escorts you out of the building.\n')
+        strategy()
+    if '2' in questions:
+        print('You know that you need to prepare better and you'
+              ' go back to your office.\n')
+        strategy()
 
 
 intro()
