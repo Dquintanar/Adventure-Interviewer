@@ -60,6 +60,27 @@ def interview():
     print('interviewer: You keep asking but no answers.\n')
 
 
+def investigation():
+    print('  You secretly go in disguise\n'
+          '  to x company headquarters')
+    print('  With your false ID you enter the building\n'
+          '  and enter into the manager\'s office .')
+    print('  To your surprise you find a mad cow'
+          ' wandering by the manager\'s desk\n'
+          '  eating paper from the trash.')
+    print('  On the wall were pictures of x pics')
+    print('  playing  x mutations.\n'
+          '  Wow I always wanted to play the x mutations !')
+    print('  while you are in shock, you open\n'
+          '  the manager\'s computer and copy all'
+          ' the files you needed.')
+    print('  You exit without incident but after\n'
+          '  seeing the x pics playing the\n x mutations'
+          ' you got inspired\n'
+          '  and start thinking to learn how to play an instrument.\n'
+          '  You completed your mission.\n')
+
+
 def valid_input(prompt, option1, option2):
     while True:
         response = input(prompt).lower()
