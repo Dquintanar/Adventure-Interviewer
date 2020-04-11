@@ -140,6 +140,7 @@ def investigating_again():
               'from your first investigation, '
               'they put you in jail for trespassing\n'
               'and robbery!\n')
+        you_loose()
         yes_no()
 
 
@@ -151,6 +152,10 @@ def yes_no():
         print('Ok Restarting the game')
         intro()
         strategy()
+
+
+def you_loose():
+    print('You loose')
 
 
 intro()
