@@ -1,3 +1,12 @@
+import random
+bad_companies = ['"Tyson Foods"',
+                 '"Cargill and Smithfield"',
+                 '"JBS USA Holdings Inc"',
+                 '"Omaha Steaks"',
+                 '"Taco Loco"', ]
+companies = random.choice(bad_companies)
+
+
 def intro():
     print('A wonderful opportunity to save the planet was '
           'offered to me.')
@@ -26,17 +35,17 @@ def intro():
     print('  Environmental Agencies')
     print('  Boycott CAFOs\n')
     print('You are consolidating new and updated information for your research')
-    print('You are going to be dealing with x company')
-    print('You can have an interview with x company')
-    print('Or investigate x company \n')
+    print('You are going to be dealing with ' + companies)
+    print('You can have an interview with ' + companies)
+    print('Or investigate ' + companies + '\n')
 
 
 def interview():
     print('Manager:     How are you, Im the manager '
-          'welcome to x company , what can I do for you ?')
+          'welcome to' + companies + ' , what can I do for you ?')
     print('interviewer: Thank you, \n'
           '             I work for Green Peace and')
-    print('             I have some questions about x company'
+    print('             I have some questions about ' + companies +
           ' food and water supply ?\n')
     print('             In average how many gallons of water does'
           ' the stock consumes per year ?')
@@ -63,7 +72,7 @@ def interview():
 
 def investigation():
     print('  You secretly go in disguise\n'
-          '  to x company headquarters')
+          '  to ' + companies + ' headquarters')
     print('  With your false ID you enter the building\n'
           '  and enter into the manager\'s office .')
     print('  To your surprise you find a mad cow'
@@ -113,7 +122,7 @@ def keep_questioning():
     if '1' in questions:
         print('You know that the questions were bold and'
               ' as a result no answers were gathered.')
-        print('Security from  x company'
+        print('Security from ' + companies +
               ' escorts you out of the building.\n')
         strategy()
     if '2' in questions:
@@ -123,19 +132,19 @@ def keep_questioning():
 
 
 def investigating_again():
-    questions = valid_input('Enter 1 to interview x company.\n'
-                            'Enter 2 to investigate x company.\n'
+    questions = valid_input('Enter 1 to interview ' + companies + '.\n'
+                            'Enter 2 to investigate ' + companies + '.\n'
                             'What would you like to do?\n'
                             '(Please enter 1 or 2.)\n', '1', '2')
     if '1' in questions:
-        print('You are now back to x company'
+        print('You are now back to ' + companies +
               ' and you are ready for justice.')
-        print('You are not welcome into x company')
+        print('You are not welcome into ' + companies)
         print('but you walk in with a Class Action Law Suit'
               ' and they want to settle')
         print('You Won Congratulations!')
     if '2' in questions:
-        print('You make the mistake of going back to x company')
+        print('You make the mistake of going back to ' + companies)
         print('and they have surveillance video footage on you '
               'from your first investigation, '
               'they put you in jail for trespassing\n'
