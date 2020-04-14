@@ -8,10 +8,18 @@ bad_companies = ['"Tyson Foods"',
 pictures = ['the Queen mutating to a mosquito',
             'Oprah on a Koala body',
             'Trump\'s hair in a pig',
-            'chickens with a human faces',
+            'chickens with human faces',
             'pigs with wings', ]
+
+instruments = ['trombone',
+               'trumpet',
+               'viola',
+               'electric base',
+               'drums',
+               'two tubas at the same time', ]
 companies = random.choice(bad_companies)
 pics = random.choice(pictures)
+instrument = random.choice(instruments)
 
 
 def intro():
@@ -81,18 +89,18 @@ def investigation():
     print('  You secretly go in disguise\n'
           '  to ' + companies + ' headquarters')
     print('  With your false ID you enter the building\n'
-          '  and enter into the manager\'s office .')
+          '  and enter into the manager\'s office.')
     print('  To your surprise you find a mad cow'
           ' wandering by the manager\'s desk\n'
           '  eating paper from the trash.')
     print('  On the wall were pictures of ' + pics)
-    print('  playing  x mutations.\n'
-          '  Wow I always wanted to play the x mutations !')
+    print('  playing ' + instrument + '.\n'
+          '  Wow I always wanted to play the ' + instrument + '!')
     print('  while you are in shock, you open\n'
           '  the manager\'s computer and copy all'
           ' the files you needed.')
     print('  You exit without incident but after\n'
-          '  seeing ' + pics + ' playing the\n x mutations'
+          '  seeing ' + pics + ' playing the\n ' + instrument +
           ' you got inspired\n'
           '  and start thinking to learn how to play an instrument.\n'
           '  You completed your mission.\n')
