@@ -182,7 +182,10 @@ def you_loose():
     print('You loose')
 
 
-intro()
+def adventure_game():
+    intro()
+    strategy()
 
-strategy()
 
+
+adventure_game()
