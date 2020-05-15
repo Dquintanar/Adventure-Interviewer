@@ -187,4 +187,5 @@ def adventure_game():
     strategy()
 
 
+
 adventure_game()
